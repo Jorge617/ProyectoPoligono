@@ -14,13 +14,11 @@ while nuevoPoligono =='s':
     print("Coordenadas vertice:", i);
     x1 = int(input("\tx: "));
     y1 = int(input("\ty: "));
-     
     poligono.append([x1,y1]);
     i = 2;
     print("Coordenadas vertice:", i);
     xant = int(input ("\tx: "));
     yant = int(input ("\ty: "));
-   
     poligono.append([xant,yant]);
     e1x = xant - x1;
     e1y = yant - y1;
@@ -32,7 +30,6 @@ while nuevoPoligono =='s':
         print ("Coordenadas vertice:\n", i);
         x = int(input("\tx: "));
         y = int(input("\ty: "));
-        
         poligono.append([x,y]);
         ex = x - xant;
         ey = y - yant;
@@ -82,15 +79,11 @@ while nuevoPoligono =='s':
                         print("\nPoligono convexo");
                     else:
                         print("\nPoligono degenerado en una linea");
-                        
-                        
-            
         elif mathop == "2":
             print ("Perimetro del poligono\n");
             print ("==============================\n\n");
             print("El perimetro del poligono es \n");
-            print(perimetro);
-            
+            print(perimetro);    
         elif mathop == "3":
             print ("INTRUDUZCA LAS COORDENADAS DEL PUNTO");
             print ("Coordenadas vertice:\n", i);
