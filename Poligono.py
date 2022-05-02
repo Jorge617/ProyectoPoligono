@@ -8,7 +8,6 @@ while nuevoPoligono =='s':
     perimetro = 0.0;
     while n < 3:
         n = int(input("Num. de vertices (debe ser mayor que 3): "));
-    
     i = 1;
     pos = 0;
     neg = 0;
@@ -100,7 +99,7 @@ while nuevoPoligono =='s':
             i = 0
             j = len(poligono) - 1
             salida = False
-            for i in range(len(poligono)):
+            for i in enumerate(len(poligono)):
                 if (poligono[i][1] < y and poligono[j][1] >= y) or (poligono[j][1] < y and poligono[i][1] >= y):
                     if poligono[i][0] + (y - poligono[i][1]) / (poligono[j][1] - poligono[i][1]) * (poligono[j][0] - poligono[i][0]) < x:
                         salida = not salida
