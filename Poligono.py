@@ -1,12 +1,11 @@
 import math
 
-nuevoPoligono='s';
-while nuevoPoligono=='s':
+nuevoPoligono='s'
+while nuevoPoligono =='s':
     print ("EMPEZAREMOS POR CREAR NUESTRO POLIGONO ");
     n = int(input("Num. de vertices (debe ser mayor que 3): "));
     poligono=[];
     perimetro = 0.0;
-    
     while n < 3:
         n = int(input("Num. de vertices (debe ser mayor que 3): "));
     
@@ -29,7 +28,7 @@ while nuevoPoligono=='s':
     perimetro = math.sqrt(e1x*e1x+e1y*e1y);
     eantx = e1x;
     eanty = e1y;
-    i = 3;	
+    i = 3;
     while i <= n :
         print ("Coordenadas vertice:\n", i);
         x = int(input("\tx: "));
@@ -40,10 +39,10 @@ while nuevoPoligono=='s':
         ey = y - yant;
         perimetro= perimetro + (ex*ex + ey*ey);
         z = eantx * ey - eanty * ex;
-        if (z > 0):	
+        if (z > 0):
             pos = pos +1;
         else:
-            if z < 0:		
+            if z < 0:
                 neg = neg +1;
         xant = x;
         yant = y;
@@ -51,7 +50,7 @@ while nuevoPoligono=='s':
         eanty = ey;
         i = i+1;
     c = 's'
-    while ((c != 'N') and (c != 'n')):   
+    while ((c != 'N') and (c != 'n')):
         print("Bienvenido a nuestra aplicacion de poligonos\n")
         print("Pulsa 1 para calcular la concavidad y la convexidad" )
         print("Pulsa 2 para calcular el perimetro")
@@ -87,13 +86,13 @@ while nuevoPoligono=='s':
                         
                         
             
-        elif mathop == "2": 
+        elif mathop == "2":
             print ("Perimetro del poligono\n");
             print ("==============================\n\n");
             print("El perimetro del poligono es \n");
             print(perimetro);
             
-        elif mathop == "3":  
+        elif mathop == "3":
             print ("INTRUDUZCA LAS COORDENADAS DEL PUNTO");
             print ("Coordenadas vertice:\n", i);
             x = int(input("\tx: "));
