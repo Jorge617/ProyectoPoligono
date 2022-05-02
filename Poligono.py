@@ -13,13 +13,13 @@ while nuevoPoligono=='s':
     i = 1;
     pos = 0;
     neg = 0;
-    print("Coordenadas vertice %d:\n", i);
+    print("Coordenadas vertice:", i);
     x1 = int(input("\tx: "));
     y1 = int(input("\ty: "));
      
     poligono.append([x1,y1]);
     i = 2;
-    print("Coordenadas vertice %d:\n", i);
+    print("Coordenadas vertice:", i);
     xant = int(input ("\tx: "));
     yant = int(input ("\ty: "));
    
@@ -31,7 +31,7 @@ while nuevoPoligono=='s':
     eanty = e1y;
     i = 3;	
     while i <= n :
-        print ("Coordenadas vertice %d:\n", i);
+        print ("Coordenadas vertice:\n", i);
         x = int(input("\tx: "));
         y = int(input("\ty: "));
         
@@ -95,7 +95,7 @@ while nuevoPoligono=='s':
             
         elif mathop == "3":  
             print ("INTRUDUZCA LAS COORDENADAS DEL PUNTO");
-            print ("Coordenadas vertice %d:\n", i);
+            print ("Coordenadas vertice:\n", i);
             x = int(input("\tx: "));
             y = int(input("\ty: "));
             i = 0
