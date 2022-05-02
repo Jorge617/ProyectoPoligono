@@ -1,5 +1,4 @@
 import math
-
 nuevoPoligono='s'
 while nuevoPoligono =='s':
     print ("EMPEZAREMOS POR CREAR NUESTRO POLIGONO ");
@@ -83,7 +82,7 @@ while nuevoPoligono =='s':
             print ("Perimetro del poligono\n");
             print ("==============================\n\n");
             print("El perimetro del poligono es \n");
-            print(perimetro);    
+            print(perimetro);
         elif mathop == "3":
             print ("INTRUDUZCA LAS COORDENADAS DEL PUNTO");
             print ("Coordenadas vertice:\n", i);
